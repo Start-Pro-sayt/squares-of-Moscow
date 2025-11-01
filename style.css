@@ -1,0 +1,254 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Шапка */
+header {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Основной контейнер */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Сетка карточек на главной */
+.squares-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.square-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.square-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.square-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.square-info {
+    padding: 1.5rem;
+}
+
+.square-info h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.square-info p {
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #2980b9;
+}
+
+.back-btn {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    transition: background 0.3s ease;
+}
+
+.back-btn:hover {
+    background: #2980b9;
+}
+
+/* Контент страниц */
+.content {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.main-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+/* Заголовки страниц */
+.page-header-red { background: linear-gradient(135deg, #ff0000, #ff6b6b); }
+.page-header-purple { background: linear-gradient(135deg, #8a2be2, #da70d6); }
+.page-header-green { background: linear-gradient(135deg, #00ff00, #32cd32); }
+.page-header-blue { background: linear-gradient(135deg, #0000ff, #1e90ff); }
+.page-header-orange { background: linear-gradient(135deg, #ff4500, #ffa500); }
+
+.page-title-red { color: #ff0000; }
+.page-title-purple { color: #8a2be2; }
+.page-title-green { color: #00ff00; }
+.page-title-blue { color: #0000ff; }
+.page-title-orange { color: #ff4500; }
+/* Подзаголовки */
+h2 {
+    color: #2c3e50;
+    margin: 2rem 0 1rem 0;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Блоки с фактами */
+.facts {
+    background: #ecf0f1;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.facts ul {
+    list-style-type: none;
+}
+
+.facts li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #bdc3c7;
+}
+
+.facts li:last-child {
+    border-bottom: none;
+}
+
+/* Галерея */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Блоки театров */
+.theaters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.theater {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #8e44ad;
+}
+
+.theater h3 {
+    color: #8e44ad;
+    margin-bottom: 0.5rem;
+}
+
+/* Памятник */
+.monument {
+    background: #ecf0f1;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    border-left: 4px solid #27ae60;
+}
+
+/* Подвал */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .main-image {
+        height: 250px;
+    }
+    
+    .squares-grid {
+        grid-template-columns: 1fr;
+    }
+}
